@@ -1,1 +1,2 @@
 # Tripleten web_project_homeland
+El proyecto homeland consistio en hacer un diseño responsivo que se adaptara a varios tamaños de pantalla sin distorsionar y que la informacion siempre fuera clara sin importar el dispositivo en el que se revisara.
