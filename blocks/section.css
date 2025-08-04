@@ -77,3 +77,43 @@
     padding: 30px 5px;
   }
 }
+.section__photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1px; 
+  grid-area: auto;
+}
+.photo-grid__image {
+  width: 100%;
+  height: auto;
+}
+.section__places {
+  display: flex;
+  padding: 65px 0 80px;
+  margin: 0 148px;
+}
+.section__column {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.section__places-title {
+  font-size: 70px;
+  line-height: 80px;
+  padding-bottom: 20px;
+}
+.section__places-image{
+  width: 100%;
+  height: auto;
+}
+.section__places-subtitle {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 100;
+}
+.section__places-text {
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
