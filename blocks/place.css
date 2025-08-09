@@ -10,29 +10,31 @@
         'link text';
 }
 
-.place__list {
-    list-style: none;
-    padding-left: 0;
-    padding-top: 10px;
-    margin: 0;
-    
-}
-
 .place__title {
     font-size: 70px;
     line-height: 80px;
     grid-area: title;
+    align-self: center;
 
 }
 
 .place__subtitle {
     font-size: 20px;
     line-height: 30px;
-    font-weight: normal;
+    font-weight: 100px;
     padding-top: 60px;
     margin: 0;
     letter-spacing: 0.2em;
     grid-area: subtitle;
+
+}
+.place__list {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 10px;
+    margin: 0;
+    letter-spacing:normal;
+    
 }
 
 .place__text {
@@ -60,7 +62,7 @@
     color: white;
     text-decoration: none;
    background-image: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
-    padding: 20px;
+    padding: 10px 30px;
     width: 250px;
     font-size: 18px;
     text-align: center;
@@ -89,6 +91,7 @@
         font-size: 40px;
         line-height: 45px;
         padding-top: 50px;
+        
     }
 
     .place__subtitle {
@@ -125,25 +128,26 @@
 
     .place__text {
         font-size: 16px;
-        padding: 10px 15px 20px 15px;
+        padding: 10px 15px 30px 15px;
     }
 
     .place__list {
-        padding: 0 15px 10px 15px;
+        padding: 0;
         font-size: 18px;
+        line-height: 22px;
     }
 
     .place__image {
         width: 100%;
         height: auto;
-        padding-top: 20px;
+        padding: 20px 0;
     }
 
     .place__link {
         text-align: center;
-        padding: 15px 15px;
+        padding: 15px 30px;
         font-size: 16px;
-        margin: 20px 15px;
+        margin: 20px;
     }
 
 }
