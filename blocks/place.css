@@ -1,10 +1,13 @@
 .place {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto 1fr;
     margin: 100px 148px;
+    row-gap: 40px;
     column-gap: 30px;
-    row-gap: 70px;
+    grid-template-areas: 'title subtitle' 
+        'image text'
+        'link text';
 }
 
 .place__list {
@@ -12,11 +15,13 @@
     padding-left: 0;
     padding-top: 10px;
     margin: 0;
+    
 }
 
 .place__title {
     font-size: 70px;
     line-height: 80px;
+    grid-area: title;
 
 }
 
@@ -27,6 +32,7 @@
     padding-top: 60px;
     margin: 0;
     letter-spacing: 0.2em;
+    grid-area: subtitle;
 }
 
 .place__text {
@@ -34,12 +40,17 @@
     line-height: 30px;
     padding-bottom: 15px;
     margin: 0;
+    
+}
+.place__description {
+    grid-area: text;
 }
 
 .place__image {
     width: 100%;
-    height: auto;
-    
+    grid-area: image;
+    display: block;
+    object-fit: cover;
 }
 .place__image:hover {
   opacity: 0.5;
@@ -55,6 +66,8 @@
     text-align: center;
     border-radius: 5px;
     box-shadow:5px 5px 10px rgba(0,0,0,0.25);
+    height: max-content;
+    grid-area: link;
 }
 .place__link:hover {
     background-image: linear-gradient(
@@ -103,7 +116,6 @@
         font-size: 30px;
         line-height: 35px;
         padding: 30px 15px 0 15px;
-
     }
 
     .place__subtitle {
@@ -129,7 +141,7 @@
 
     .place__link {
         text-align: center;
-        padding: 15px 30px;
+        padding: 15px 15px;
         font-size: 16px;
         margin: 20px 15px;
     }
